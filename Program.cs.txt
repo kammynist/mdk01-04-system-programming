@@ -42,4 +42,6 @@ foreach (var file in files)
 }
 
 File.WriteAllText(csv, sb.ToString(), Encoding.UTF8);
-Console.WriteLine($"\nГотово! Результат: {csv}");
+Console.WriteLine($"\nГотово! Результат сохранён в: {csv}");
+Console.WriteLine("Нажмите любую клавишу для выхода...");
+Console.ReadKey();
